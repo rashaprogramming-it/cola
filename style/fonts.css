@@ -1,0 +1,26 @@
+/* Coca Cola Fonts */
+@font-face {
+    font-family: 'K_TCCC Unity Regular';
+    src: url(../assets/fonts/K_TCCCUnity/K_TCCCUnity-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'K_TCCC Unity Medium';
+    src: url(../assets/fonts/K_TCCCUnity/K_TCCCUnity-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'K_TCCC Unity Bold';
+    src: url(../assets/fonts/K_TCCCUnity/K_TCCCUnity-Bold.ttf);
+}
+
+/* Yandex Fonts */
+@font-face {
+    font-family: 'Yandex Sans Display Regular';
+    src: url(../assets/fonts/YandexSansDisplay/YandexSansDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Yandex Sans Display Bold';
+    src: url(../assets/fonts/YandexSansDisplay/YandexSansDisplay-Bold.ttf);
+}

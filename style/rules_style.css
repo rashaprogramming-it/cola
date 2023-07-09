@@ -1,0 +1,142 @@
+@import url(nullstyle.css);
+
+:root {
+    --ccr: 'K_TCCC Unity Regular';
+    --ccb: 'K_TCCC Unity Bold';
+    --ccm: 'K_TCCC Unity Medium';
+
+    --yr: 'Yandex Sans Display Regular';
+    --yb: 'Yandex Sans Display Bold';
+}
+
+
+body {
+    font-family: var(--ccr);
+    background: #fff;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header__content-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.header__content-nav--list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__content-nav--list---link {
+    color: #000;
+    font-size: 16px;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__content-nav--list---link::before {
+    content: '';
+    display: none;
+    width: max;
+    height: 3px;
+    background: #ff0000;
+    order: 2;
+}
+
+.header__content-nav--list---link.active {
+    font-family: var(--ccm);
+}
+
+.header__content-nav--list---link.active::before {
+    display: block;
+}
+
+.main {
+    padding: 20px 0 55px 0;
+}
+
+.main__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.main__content-title {
+    color: #000;
+    text-align: center;
+    font-size: 25px;
+    line-height: 113%;
+    font-family: var(--ccm);
+}
+
+.main__content-text {
+    color: #000;
+    font-size: 16px;
+    line-height: 113%;
+}
+
+.footer {
+    border-radius: 64px 64px 0px 0px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.footer__content-text {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    line-height: 113%;
+    letter-spacing: 0.14px;
+    opacity: 0.800000011920929;
+    font-family: var(--ccm);
+}
+
+@media (max-width: 500px) {
+    .main__content-title {
+        font-size: 20px;
+    }
+
+    .main__content-text {
+        font-size: 16px;
+    }
+}
